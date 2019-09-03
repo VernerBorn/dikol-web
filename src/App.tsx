@@ -1,7 +1,13 @@
 import React from 'react'
 
+import Section from './components/UI/Section'
+
 const App: React.FC = (): JSX.Element => {
-  return <div className="App">Hollo World!</div>
+  return (
+    <Section className="section" title="hello">
+      <div className="App">Hollo World!</div>
+    </Section>
+  )
 }
 
 export default App
