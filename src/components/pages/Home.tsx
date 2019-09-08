@@ -23,14 +23,9 @@ const Home: React.FC = (): JSX.Element => {
     ),
   )
   return (
-    <>
-      <Section className="recent-places" title="Недавние места">
-        <ScrollTouch className="recent-places">{recentPlacesItem}</ScrollTouch>
-      </Section>
-      <Section className="popular-categories" title="Популярные места">
-        <ScrollTouch className="popular-categories">{recentPlacesItem}</ScrollTouch>
-      </Section>
-    </>
+    <Section className="recent-places" title="Недавние места">
+      <ScrollTouch className="recent-places">{recentPlacesItem}</ScrollTouch>
+    </Section>
   )
 }
 
