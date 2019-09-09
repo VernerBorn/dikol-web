@@ -1,11 +1,17 @@
 import { gql } from 'apollo-boost'
-const RECENT_PLACES = gql`
+const HOME = gql`
   query {
     recentPlaces {
       id
       title
       subTitle
     }
+    popularCategories {
+      id
+      type
+      title
+    }
   }
 `
-export { RECENT_PLACES }
+
+export { HOME }

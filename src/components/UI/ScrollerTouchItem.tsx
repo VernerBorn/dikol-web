@@ -6,16 +6,8 @@ interface IScrollTouchItemProps {
   children: JSX.Element
 }
 
-const ScrollTouchItem: React.FC<IScrollTouchItemProps> = ({
-  key,
-  children,
-  className,
-}): JSX.Element => {
-  return (
-    <li key={key} className={`scroller-touch__item--${className} scroller-touch__item`}>
-      {children}
-    </li>
-  )
-}
+const ScrollTouchItem: React.FC<IScrollTouchItemProps> = ({ children, className }): JSX.Element => (
+  <li className={`scroller-touch__item--${className} scroller-touch__item`}>{children}</li>
+)
 
 export default ScrollTouchItem

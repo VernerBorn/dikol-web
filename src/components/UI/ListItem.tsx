@@ -2,7 +2,7 @@ import React from 'react'
 
 interface ListItemProps {
   className: string
-  children: JSX.Element[] | JSX.Element
+  children: JSX.Element
 }
 
 const ListItem: React.FC<ListItemProps> = ({ children, className }): JSX.Element => (
