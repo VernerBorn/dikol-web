@@ -5,17 +5,10 @@ interface ScrollTouchListProps {
   children: JSX.Element[]
 }
 
-const ScrollTouch: React.FC<ScrollTouchListProps> = ({ children, className }): JSX.Element => {
-  const item = children.map(
-    (children): JSX.Element => (
-      <li className={`scroller-touch__item--${className} scroller-touch__item`}>{children}</li>
-    ),
-  )
-  return (
-    <div className="scroller-touch">
-      <ul className={`scroller-touch__list--${className} scroller-touch__list`}>{item}</ul>
-    </div>
-  )
-}
+const ScrollTouch: React.FC<ScrollTouchListProps> = ({ children, className }): JSX.Element => (
+  <div className="scroller-touch">
+    <ul className={`scroller-touch__list--${className} scroller-touch__list`}>{children}</ul>
+  </div>
+)
 
 export default ScrollTouch
