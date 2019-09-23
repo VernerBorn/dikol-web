@@ -1,0 +1,9 @@
+.section {
+  letter-spacing: 0.5px;
+  margin: 16px;
+  font-weight: 700;
+  &__title {
+    margin: 0 0 0 16px;
+    font-size: 16px;
+  }
+}

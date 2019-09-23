@@ -1,7 +1,7 @@
 import React from 'react'
 import { useQuery } from '@apollo/react-hooks'
 
-import { HOME } from './QUERY_Home'
+import { HOME } from './queryHome'
 
 import Section from '../../UI/Section'
 import RecentPlaces from './RecentPlaces/RecentPlaces'

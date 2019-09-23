@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Paper from '../../../UI/Paper'
 import ListItem from '../../../UI/ListItem'
 import ListGroup from '../../../UI/ListGroup'
+import Icon from '../../../UI/Icon'
 
 interface IPopularCategoriesItem {
   id: string
@@ -17,9 +18,8 @@ const PopularCategories: React.FC<IPopularCategories> = ({ popularCategories }):
   const popularCategoriesItem = popularCategories.map(
     ({ id, title, type }: IPopularCategoriesItem): JSX.Element => (
       <ListItem key={id} className="popular-categories">
-        <Link to={`categories/${id}`}>
-          {type}
-          <br />
+        <Link to={`categories/${type}`}>
+          <Icon className="popular-categories" name={type} />
           {title}
         </Link>
       </ListItem>

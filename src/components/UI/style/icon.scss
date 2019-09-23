@@ -1,0 +1,85 @@
+@import './icon_func.scss';
+.icon__home {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(home, #151515);
+  background-repeat: no-repeat;
+}
+.icon__home:hover {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(home, #09ff00);
+  background-repeat: no-repeat;
+}
+.icon__scissors {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(scissors, #151515);
+  background-repeat: no-repeat;
+}
+.icon__scissors:hover {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(scissors, #09ff00);
+  background-repeat: no-repeat;
+}
+.icon__nail-service {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(nail-service, #151515);
+  background-repeat: no-repeat;
+}
+.icon__nail-service:hover {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(nail-service, #09ff00);
+  background-repeat: no-repeat;
+}
+.icon__service {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(service, #151515);
+  background-repeat: no-repeat;
+}
+.icon__service:hover {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(service, #09ff00);
+  background-repeat: no-repeat;
+}
+.icon__hookah {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(hookah, #151515);
+  background-repeat: no-repeat;
+}
+.icon__hookah:hover {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(hookah, #09ff00);
+  background-repeat: no-repeat;
+}
+.icon__nail-service {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(nail-service, #151515);
+  background-repeat: no-repeat;
+}
+.icon__nail-service:hover {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(nail-service, #09ff00);
+  background-repeat: no-repeat;
+}

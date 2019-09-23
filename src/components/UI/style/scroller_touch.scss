@@ -1,0 +1,33 @@
+.scroller-touch {
+  overflow: hidden;
+  margin-left: -16px;
+  margin-right: -16px;
+
+  &__list {
+    margin: 0;
+    list-style: none;
+    overflow-x: scroll;
+    margin-bottom: -30px;
+    padding-bottom: 30px;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &--recent-places {
+      display: flex;
+      padding: 16px 0 50px;
+    }
+  }
+
+  &__item {
+    &--recent-places {
+      flex: 1 1 0;
+
+      &:last-child {
+        padding-right: 16px;
+      }
+    }
+  }
+}
