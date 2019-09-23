@@ -1,5 +1,5 @@
 import { gql } from 'apollo-boost'
-const HOME = gql`
+const queryHome = gql`
   query {
     recentPlaces {
       id
@@ -14,4 +14,4 @@ const HOME = gql`
   }
 `
 
-export { HOME }
+export default queryHome

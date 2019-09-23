@@ -1,3 +1,10 @@
+@mixin icon($icon, $color, $size) {
+  display: block;
+  width: $size;
+  height: $size;
+  background-image: get-icon($icon, $color);
+  background-repeat: no-repeat;
+}
 @function str-replace($string, $search, $replace) {
   $index: str-index($string, $search);
   @if $index {

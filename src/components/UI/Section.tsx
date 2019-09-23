@@ -15,7 +15,7 @@ const Section: React.FC<SectionProps> = ({
 }): React.ReactElement => {
   return (
     <section className={`section section--${className}`}>
-      <div className="section__title-wrap">
+      <div className="section__title--wrap">
         <h2 className="section__title">{title}</h2>
         {link ? (
           <Link className="section__link" to={link}>

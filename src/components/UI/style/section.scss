@@ -1,9 +1,27 @@
 .section {
-  letter-spacing: 0.5px;
   margin: 16px;
+  letter-spacing: 0.5px;
   font-weight: 700;
   &__title {
     margin: 0 0 0 16px;
     font-size: 16px;
+    &--wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    margin-right: -16px;
+    border-radius: 5px 0 0 5px;
+    background-color: #f93c65;
+    padding: 2px 16px 3px 12px;
+    text-decoration: none;
+    color: #fff;
+    &:hover,
+    &:visited {
+      color: #fff;
+    }
   }
 }
