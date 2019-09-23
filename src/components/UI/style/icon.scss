@@ -83,3 +83,17 @@
   background-image: get-icon(nail-service, #09ff00);
   background-repeat: no-repeat;
 }
+.icon__button {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(button, #f93c65);
+  background-repeat: no-repeat;
+}
+.icon__button:hover {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: get-icon(button, #f93c65);
+  background-repeat: no-repeat;
+}

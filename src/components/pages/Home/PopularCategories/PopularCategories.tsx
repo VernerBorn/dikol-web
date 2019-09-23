@@ -18,9 +18,10 @@ const PopularCategories: React.FC<IPopularCategories> = ({ popularCategories }):
   const popularCategoriesItem = popularCategories.map(
     ({ id, title, type }: IPopularCategoriesItem): JSX.Element => (
       <ListItem key={id} className="popular-categories">
-        <Link to={`categories/${type}`}>
+        <Link to={`categories/${type}`} className="popular-categories__link">
           <Icon className="popular-categories" name={type} />
-          {title}
+          <span className="popular-categories__title">{title}</span>
+          <Icon className="popular-categories" name="button" />
         </Link>
       </ListItem>
     ),
