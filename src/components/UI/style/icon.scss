@@ -29,3 +29,33 @@
     background-image: get-icon(scissors, #000020);
   }
 }
+.icon__home {
+  @include icon(home, #f93c65, 24px);
+  &::hover {
+    background-image: get-icon(home, #f93c65);
+  }
+}
+.icon__user {
+  @include icon(user, #000020, 24px);
+  &::hover {
+    background-image: get-icon(user, #000020);
+  }
+}
+.icon__search {
+  @include icon(search, #000020, 24px);
+  &::hover {
+    background-image: get-icon(search, #000020);
+  }
+}
+.icon__bell {
+  @include icon(bell, #000020, 24px);
+  &::hover {
+    background-image: get-icon(bell, #000020);
+  }
+}
+.icon__calendar {
+  @include icon(calendar, #000020, 24px);
+  &::hover {
+    background-image: get-icon(calendar, #000020);
+  }
+}

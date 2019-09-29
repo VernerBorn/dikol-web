@@ -4,14 +4,18 @@ import { Switch, Route } from 'react-router'
 
 import Home from '../pages/Home/Home'
 import { Link } from 'react-router-dom'
+import ButtonBar from '../UI/ButtonBar'
 const Client: React.FC = (): JSX.Element => <Link to="/">Назад</Link>
 
 const App: React.FC = (): JSX.Element => {
   return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/client/:id" component={Client} />
-    </Switch>
+    <>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/client/:id" component={Client} />
+      </Switch>
+      <ButtonBar />
+    </>
   )
 }
 

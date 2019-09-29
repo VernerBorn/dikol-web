@@ -11,7 +11,6 @@ const Home: React.FC = (): JSX.Element => {
   const { loading, error, data } = useQuery(queryHome)
   if (error) return <div>Ошибка</div>
   if (loading || !data) return <div>Загрузка</div>
-  console.log(data)
   return (
     <>
       <Section className="recent-places" title="Недавние места">
