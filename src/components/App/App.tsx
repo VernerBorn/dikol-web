@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router'
 
 import Home from '../pages/Home/Home'
 import { Link } from 'react-router-dom'
-import BottomBar from '../UI/BottonBar'
+import BottomBar from '../UI/BottomBar'
 const Client: React.FC = (): JSX.Element => <Link to="/">Назад</Link>
 
 const App: React.FC = (): JSX.Element => {
