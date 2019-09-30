@@ -6,7 +6,7 @@ interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ name, className }): JSX.Element => (
-  <i className={`icon__${name} icon__${name}--${className}`}></i>
+  <abbr title={name} className={`icon__${name} icon__${name}--${className}`}></abbr>
 )
 
 export default Icon

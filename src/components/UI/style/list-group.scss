@@ -1,7 +1,9 @@
-.list__group {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 16px;
-  list-style: none;
+.list {
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }

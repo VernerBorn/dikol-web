@@ -1,9 +1,9 @@
 .popular-categories {
   &__link {
+    padding: 8px 16px;
     font-weight: 400;
     display: flex;
     align-items: center;
-    padding-bottom: 16px;
     text-decoration: none;
     color: #000020;
     &:hover,
@@ -26,4 +26,10 @@
 }
 .icon__button--popular-categories {
   margin-left: auto;
+}
+.list__item--popular-categories:first-child .popular-categories__link {
+  padding-top: 16px;
+}
+.list__item--popular-categories:last-child .popular-categories__link {
+  padding-bottom: 16px;
 }

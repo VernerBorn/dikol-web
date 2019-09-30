@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router'
 
 import Home from '../pages/Home/Home'
 import { Link } from 'react-router-dom'
-import ButtonBar from '../UI/ButtonBar'
+import BottomBar from '../UI/BottonBar'
 const Client: React.FC = (): JSX.Element => <Link to="/">Назад</Link>
 
 const App: React.FC = (): JSX.Element => {
@@ -14,7 +14,7 @@ const App: React.FC = (): JSX.Element => {
         <Route exact path="/" component={Home} />
         <Route exact path="/client/:id" component={Client} />
       </Switch>
-      <ButtonBar />
+      <BottomBar />
     </>
   )
 }
