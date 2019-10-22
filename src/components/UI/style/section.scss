@@ -15,10 +15,11 @@
     font-weight: 400;
     margin-right: -16px;
     border-radius: 5px 0 0 5px;
-    background-color: #f93c65;
+    background-color: rgb(249, 60, 101);
     padding: 2px 16px 3px 12px;
     text-decoration: none;
     color: #fff;
+    box-shadow: 0 2px 12px -1px rgba(249, 60, 101, 0.8);
     &:hover,
     &:visited {
       color: #fff;

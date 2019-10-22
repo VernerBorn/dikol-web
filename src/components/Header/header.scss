@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #fff;
+  align-items: center;
+  box-shadow: 0 24px 20px -20px rgba(0, 0, 0, 0.1);
+  &__title {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    padding-right: 24px;
+  }
+}
+.icon__angle-left--header--client {
+  @include icon(angle-left, #f93c65, 24px);
+  &::hover {
+    background-image: get-icon(angle-left, #f93c65);
+  }
+}

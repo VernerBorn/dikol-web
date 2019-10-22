@@ -1,0 +1,62 @@
+$loader-color: #f93c65 !default;
+$loader-size: 56px !default;
+$loader-height: 20px !default;
+$loader-border-size: 8px !default;
+$loader-gap: 12px !default;
+$loader-animation-duration: 1s !default;
+@mixin loader-rotate {
+  @keyframes loader-rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+@mixin loader-scale {
+  @keyframes loader-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+}
+@mixin loader05(
+  $size: $loader-size,
+  $color: $loader-color,
+  $border-size: $loader-border-size,
+  $duration: $loader-animation-duration
+) {
+  position: relative;
+  width: $size;
+  height: $size;
+  border: $border-size solid $color;
+  border-radius: 50%;
+  animation: loader-scale $duration ease-out infinite;
+  @include loader-scale;
+}
+.loader__app--wrap {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.loader__app--active {
+  background-color: #f6f7f9;
+  @include loader05();
+}

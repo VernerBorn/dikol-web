@@ -1,19 +1,18 @@
 .bottom-bar {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -6px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
   &__list {
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 16px;
+    padding-bottom: calc(env(safe-area-inset-bottom) + 16px);
     list-style: none;
   }
-}
-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: block;
-  background-color: #fff;
-  box-shadow: 0 -12px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 16px 16px 0 0;
 }

@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Paper from '../../../UI/Paper'
-import ListItem from '../../../UI/ListItem'
-import ListGroup from '../../../UI/ListGroup'
-import Icon from '../../../UI/Icon'
+import { ListItem, ListGroup, Paper, Icon } from '../../components/UI'
 
 interface IPopularCategoriesItem {
   id: string

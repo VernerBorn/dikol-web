@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Icon from './Icon'
 
 const BottomBar: React.FC = (): JSX.Element => (
-  <nav className='bottom-bar"'>
+  <nav className="bottom-bar">
     <ul className="bottom-bar__list">
       <li className="bottom-bar__item">
         <Link to="/" className="bottom-bar__link">

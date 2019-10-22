@@ -59,3 +59,9 @@
     background-image: get-icon(calendar, #000020);
   }
 }
+.icon__angle-left {
+  @include icon(angle-left, #000020, 24px);
+  &::hover {
+    background-image: get-icon(angle-left, #000020);
+  }
+}

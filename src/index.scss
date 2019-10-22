@@ -1,24 +1,28 @@
 @import './components/UI/UI.scss';
-@import './components/pages/Home/home.scss';
+@import './components/Header/header.scss';
+@import './components/RecentPlaces/recent-places.scss';
+@import './components/PopularCategories/popular-categories.scss';
+@import './components/LoaderIndicator/loader-indicator.scss';
+
 body {
-  font-weight: 400;
-  color: #000020;
   margin: 0;
-  padding: 0;
-  font-family: Neuron, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #f6f7f9;
+  padding: 0;
   padding-bottom: 72px;
+  color: #000020;
+  font-family: Neuron, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
 }
 @font-face {
   font-family: 'Neuron';
-  src: url(./fonts/Neuron-Regular.woff2) format('woff2');
   font-weight: 400;
   font-style: normal;
+  src: url(./fonts/Neuron-Regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Neuron';
-  src: url(./fonts/Neuron-Bold.woff2) format('woff2');
   font-weight: 700;
   font-style: normal;
+  src: url(./fonts/Neuron-Bold.woff2) format('woff2');
 }

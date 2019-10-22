@@ -1,21 +1,19 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React from 'react'
 import { Switch, Route } from 'react-router'
 
-import Home from '../pages/Home/Home'
-import { Link } from 'react-router-dom'
+import Home from '../../pages/Home/Home'
 import BottomBar from '../UI/BottomBar'
-const Client: React.FC = (): JSX.Element => <Link to="/">Назад</Link>
+import Client from '../../pages/Client/Client'
 
 const App: React.FC = (): JSX.Element => {
   return (
-    <>
+    <div className="container">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/client/:id" component={Client} />
       </Switch>
       <BottomBar />
-    </>
+    </div>
   )
 }
 
